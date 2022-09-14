@@ -1,4 +1,8 @@
 #!/bin/sh
+export DEBIAN_FRONTEND=noninteractive
+apt update
+apt upgrade -y
+
 
 apt-get install -y git
 apt-get install -y libssl-dev
@@ -8,3 +12,4 @@ echo "export PATH=/home/vagrant/os-challenge-common/:$PATH" >> /home/vagrant/.ba
 
 echo "bootstrap.sh done"
 
+reboot
