@@ -1,4 +1,4 @@
-# OS-Challenge-Common for Apple Silicon
+ln -s /Applications/VMWare\ Fusion\ Tech\ Preview.app /Applications/VMWare\ Fusion.app# OS-Challenge-Common for Apple Silicon
 
 *By Emil Njor (emjn@dtu.dk)*
 
@@ -31,6 +31,12 @@ First we need to install the hypervisor that we are going to use. You can either
 $ brew tap homebrew/cask-versions # This adds a new repository to your homebrew installation. This is needed as the VMWare version that we are using is not in the main repositories as it is currently a tech preview.
 $ brew install vmware-fusion-tech-preview
 ```
+
+After you install VMWare Fusion Tech Preview 22H2 you will need to create a symbolic link from that application to a "fake" application called VMWare Fusion. This is because the vagrant vmware utility, a program that we will install later, assumes this name for VMWare Fusion. Use this command to create the symbolic link:
+```
+ln -s /Applications/VMWare\ Fusion\ Tech\ Preview.app /Applications/VMWare\ Fusion.app
+```
+Credit to this GitHub post for discovering this (https://gist.github.com/sbailliez/f22db6434ac84eccb6d3c8833c85ad92)
 
 ### Install Vagrant
 
