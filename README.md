@@ -1,3 +1,7 @@
+## Update
+This repository was created for the 2022 version of the 02159 Operating Systems Course at the Technical University of Denmark. It has not been updated for the 2023 version of the class as files for Apple Silicon has been moved to the regular os-challenge-common repository. It is *very* likely that the information and files in this repository is outdated at the moment.
+
+## Intro
 ln -s /Applications/VMWare\ Fusion\ Tech\ Preview.app /Applications/VMWare\ Fusion.app# OS-Challenge-Common for Apple Silicon
 
 *By Emil Njor (emjn@dtu.dk)*
